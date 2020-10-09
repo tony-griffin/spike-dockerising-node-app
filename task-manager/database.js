@@ -14,6 +14,7 @@ const sequelize = new Sequelize(
   }
 );
 
+// Defines the columns in the Task table and their types and what they allow
 const Task = sequelize.define("Task", {
   description: {
     type: Sequelize.STRING,
