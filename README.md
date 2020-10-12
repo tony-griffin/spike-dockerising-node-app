@@ -49,21 +49,20 @@ I then ran the container based on that image
 docker run -it -p 3010:3010 task-manager
 ```
 
-## To start the Docker compose container:
+## To start the Docker compose container locally:
 
 ```
 docker-compose up
 ```
 
 Configure postgres database
+
 ```
 docker-compose run task-manager npm run migrate
 ```
-Run locally with docker-compose
-```
-docker-compose up
-```
+
 From another terminal run tests
+
 ```
 docker-compose run task-manager npm test
 ```
